@@ -14,7 +14,7 @@ You made a daily guessing game: a Wordle for footballers, a Globle for rivers, a
 
 ## Install
 
-It needs [Node.js](https://nodejs.org) 20 or later. Nothing else: no account, no key.
+It needs [Node.js](https://nodejs.org) 20 or later and [git](https://git-scm.com) (npx fetches the server from GitHub). No account, no key.
 
 **Claude Code**
 
