@@ -1,0 +1,47 @@
+{
+  "name": "dle-submit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that submits a daily .dle game to the directories that list them, and remembers where it was already sent.",
+  "type": "module",
+  "bin": {
+    "dle-submit-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/index.js",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "readme": "node scripts/readme.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wordle",
+    "dle",
+    "daily-games",
+    "directory",
+    "submit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alldle-net/dle-submit-mcp.git"
+  },
+  "homepage": "https://github.com/Alldle-net/dle-submit-mcp#readme",
+  "license": "MIT",
+  "author": "Alldle (https://www.alldle.net)",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.4.0",
+    "@types/node": "^22.20.5",
+    "typescript": "~5.9"
+  }
+}
